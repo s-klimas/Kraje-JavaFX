@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="manageCountriesBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" stylesheets="@../css/manageCountries.css"
+            xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.sebastianklimas.countries.controllers.ManageCountriesPaneController">
+    <bottom>
+        <Button fx:id="backButton" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="75.0"
+                prefWidth="200.0" text="Back" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="15.0"/>
+            </BorderPane.margin>
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Button>
+    </bottom>
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="40.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                            <children>
+                                <Button id="africaButton" fx:id="africaButton" mnemonicParsing="false"
+                                        onAction="#africa" prefHeight="75.0" prefWidth="300.0"
+                                        styleClass="continentsButtons" text="Africa">
+                                    <font>
+                                        <Font size="25.0"/>
+                                    </font>
+                                </Button>
+                                <CheckBox fx:id="africaCheckBox" mnemonicParsing="false"
+                                          styleClass="continentsCheckBoxes"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                            <children>
+                                <Button id="austaliaButton" fx:id="australiaButton" mnemonicParsing="false"
+                                        onAction="#australia" prefHeight="75.0" prefWidth="300.0"
+                                        styleClass="continentsButtons" text="Australia">
+                                    <font>
+                                        <Font size="25.0"/>
+                                    </font>
+                                </Button>
+                                <CheckBox fx:id="australiaCheckBox" mnemonicParsing="false"
+                                          styleClass="continentsCheckBoxes"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                            <children>
+                                <Button id="northAmericaButton" fx:id="northAmericaButton" mnemonicParsing="false"
+                                        onAction="#northAmerica" prefHeight="75.0" prefWidth="300.0"
+                                        styleClass="continentsButtons" text="North America">
+                                    <font>
+                                        <Font size="25.0"/>
+                                    </font>
+                                </Button>
+                                <CheckBox fx:id="northAmericaCheckBox" mnemonicParsing="false"
+                                          styleClass="continentsCheckBoxes"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                            <children>
+                                <Button id="allCountriesButton" fx:id="allCountriesButton" mnemonicParsing="false"
+                                        onAction="#allCountries" prefHeight="75.0" prefWidth="300.0"
+                                        styleClass="continentsButtons" text="All countries">
+                                    <font>
+                                        <Font size="25.0"/>
+                                    </font>
+                                </Button>
+                                <CheckBox fx:id="allCountriesCheckBox" mnemonicParsing="false"
+                                          styleClass="continentsCheckBoxes"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                            <children>
+                                <CheckBox fx:id="asiaCheckBox" mnemonicParsing="false"
+                                          styleClass="continentsCheckBoxes"/>
+                                <Button id="asiaButton" fx:id="asiaButton" mnemonicParsing="false" onAction="#asia"
+                                        prefHeight="75.0" prefWidth="300.0" styleClass="continentsButtons" text="Asia">
+                                    <font>
+                                        <Font size="25.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                            <children>
+                                <CheckBox fx:id="europeCheckBox" mnemonicParsing="false"
+                                          styleClass="continentsCheckBoxes"/>
+                                <Button id="europeButton" fx:id="europeButton" mnemonicParsing="false"
+                                        onAction="#europe" prefHeight="75.0" prefWidth="300.0"
+                                        styleClass="continentsButtons" text="Europe">
+                                    <font>
+                                        <Font size="25.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                            <children>
+                                <CheckBox fx:id="southAmericaCheckBox" mnemonicParsing="false"
+                                          styleClass="continentsCheckBoxes"/>
+                                <Button id="southAmericaButton" fx:id="southAmericaButton" mnemonicParsing="false"
+                                        onAction="#southAmerica" prefHeight="75.0" prefWidth="300.0"
+                                        styleClass="continentsButtons" text="South America">
+                                    <font>
+                                        <Font size="25.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                            <children>
+                                <CheckBox fx:id="unrecognizedCountriesCheckBox" mnemonicParsing="false"
+                                          styleClass="continentsCheckBoxes"/>
+                                <Button id="unrecognizedCountriesButton" fx:id="unrecognizedCountriesButton"
+                                        mnemonicParsing="false" onAction="#unrecognizedCountries" prefHeight="75.0"
+                                        prefWidth="300.0" styleClass="continentsButtons" text="Unrecognized countries">
+                                    <font>
+                                        <Font size="25.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

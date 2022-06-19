@@ -1,0 +1,13 @@
+.ocean {
+    -fx-background-color: #8bb4f8;
+}
+
+.country {
+    -fx-fill: black;
+    -fx-stroke: white;
+    -fx-stroke-width: 1px;
+}
+/*.country:hover {*/
+/*    -fx-fill: green;*/
+/*    -fx-stroke: none;*/
+/*}*/
